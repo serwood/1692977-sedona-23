@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <a class="header__logo" href="#">
+        <img src="img/logo.svg" width="101" height="84" alt="логотип сата седона">
+      </a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-navigation__item current">
+              <a href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#">Html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-catalog">
+      <section class="welcome">
+        <div class="welcome__wrapper">
+          <img class="welcome__pic" src="img/welcome-text.svg" width="282" height="214" alt="промо текст седона">
+          <h1 class="welcome__title">Фото и видео</h1>
+          <h2 class="welcome__subtitle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</h2>
+        </div>
+      </section>
+      <section class="card">
+        <ul class="card__list picture">
+          <li class="picture__item">
+            <img class="picture__img" src="img/picture-1.jpg" width="280" height="280" alt="дорога через просторы Седоны">
+            <h2 class="picture__title">неродные просторы</h2>
+            <p class="picture__text">Автор фото: Борис</p>
+            <div class="picture_like like">
+              <img class="like__img" src="img/like-icon.svg" width="23" height="21" alt="палец вверх">
+              <p class="like__sum">1350</p>
+            </div>
+          </li>
+          <li class="picture__item">
+            <img src="img/picture-2.jpg" width="280" height="280" alt="кактус с цветами">
+            <h2 class="picture__title">Местная растительность</h2>
+            <p class="picture__text">Автор фото: Сергей</p>
+            <div class="picture_like like">
+              <img class="like__img" src="img/like-icon.svg" width="23" height="21" alt="палец вверх">
+              <p class="like__sum">143</p>
+            </div>
+          </li>
+          <li class="picture__item">
+            <img src="img/picture-3.jpg" width="280" height="280" alt="серпантин через зелёные деревья">
+            <h2 class="picture__title">Дорога на север</h2>
+            <p class="picture__text">Автор фото: Петр</p>
+            <div class="picture_like like">
+              <img class="like__img" src="img/like-icon.svg" width="23" height="21" alt="палец вверх">
+              <p class="like__sum">96</p>
+            </div>
+          </li>
+          <li class="picture__item">
+            <img src="img/picture-4.jpg" width="280" height="280" alt="скала в виде моста над каньоном">
+            <h2 class="picture__title">Мост дьявола</h2>
+            <p class="picture__text">Автор фото: Антон</p>
+            <div class="picture_like like">
+              <img class="like__img" src="img/like-icon.svg" width="23" height="21" alt="палец вверх">
+              <p class="like__sum">254</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="video">
+        <div class="video__wrapper">
+          <h2 class="visually-hidden">Видеоматериалы о Седоне</h2>
+          <p class="video__title">Все еще сомневаетесь?</p>
+          <p class="video__subtitle">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <div class="video__player player">
+            <img class="player__window" src="img/video.jpg" width="320" height="201" alt="дорога в скалах Седоны">
+            <div class="player__time time">
+              <div class="time__bar"></div>
+              <div class="time__toggle"></div>
+            </div>
+            <div class="player__control control">
+              <button class="control__button control__button--repeat" type="button">
+                <span class="visually-hidden">Повторить</span>
+              </button>
+              <button class="control__button control__button--subtitles" type="button">
+                <span class="visually-hidden">Показать субтитры</span>
+              </button>
+              <button class="control__button control__button--screen" type="button">
+                <span class="visually-hidden">Развернуть во весь экран</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__contacts contacts">
+          <p class="contacts__text">#visitSEDONA</p>
+        </div>
+        <ul class="footer__list smm">
+          <li class="smm__item">
+            <img class="smm__icon" src="img/twitter.svg" width="46" height="48" alt="иконка twitter">
+          </li>
+          <li class="smm__item">
+            <img class="smm__icon" src="img/facebook.svg" width="47" height="48" alt="иконка facebook">
+         </li>
+         <li class="smm__item">
+            <img class="smm__icon" src="img/youtube.svg" width="46" height="48" alt="иконка youtube">
+          </li>
+        </ul>
+        <a class="footer__link developer" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="developer__text">Разработано</p>
+          <img class="developer__icon" src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
