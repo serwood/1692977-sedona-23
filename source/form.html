@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <a class="header__logo" href="#">
+        <img src="img/logo.svg" width="101" height="84" alt="логотип сата седона">
+      </a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="main-navigation__item current">
+              <a href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#">Html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-form">
+      <section class="welcome">
+        <div class="welcome__wrapper">
+          <img class="welcome__pic" src="img/welcome-text.svg" width="282" height="214" alt="промо текст седона">
+          <h1 class="welcome__title">Оставьте свой отзыв</h1>
+          <p class="welcome__subtitle">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+      </section>
+      <h2 class="visually-hidden">Страница с формой и отзывами</h2>
+      <form class="form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Представьтесь:</legend>
+          <ul class="form__list list-contact">
+            <li class="list-contact__item">
+              <label class="list-contact__subtitle" for="name">Имя*:</label>
+              <input class="list-contact__input" type="text" name="name" id="name" placeholder="Петр" required>
+            </li>
+            <li class="list-contact__item">
+              <label class="list-contact__subtitle" for="surname">Фамилия*:</label>
+              <input class="list-contact__input" type="text" name="surname" id="surname" placeholder="Иванов" required>
+            </li>
+            <li class="list-contact__item">
+              <label class="list-contact__subtitle" for="patronymic">Отчество</label>
+              <input class="list-contact__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Контактная информация:</legend>
+          <ul class="form__list list-contact">
+            <li class="list-contact__item">
+              <label class="list-contact__subtitle" for="tel">Контактный телефон*:</label>
+              <input class="list-contact__input list-contact__input--tel" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
+            </li>
+            <li class="list-contact__item">
+              <label class="list-contact__subtitle" for="email">Электронная почта*:</label>
+              <input class="list-contact__input list-contact__input--email" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Ваше общее впечатление:</legend>
+          <ul class="form__list list-effect">
+            <li class="list-effect">
+              <input class="list-effect__input" type="radio" name="effect" id="positive" value="Скорее положительное" checked>
+              <label class="list-effect__subtitle" for="positive">Скорее положительное</label>
+            </li>
+            <li class="list-effect">
+              <input class="list-effect__input" type="radio" name="effect" id="negative" value="Скорее отрицательное">
+              <label class="list-effect__subtitle" for="negative">Скорее отрицательное</label>
+            </li>
+            <li class="list-effect">
+              <input class="list-effect__input" type="radio" name="effect" id="none" value="Затрудняюсь ответить">
+              <label class="list-effect__subtitle" for="none">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Посещенные<br>достопримечательности:</legend>
+          <ul class="form__list list-visit">
+            <li class="list-visit">
+              <input class="list-visit__input" type="checkbox" id="bridge" name="bridge" checked>
+              <label class="list-visit__subtitle" for="bridge">Мост Дьявола</label>
+            </li>
+            <li class="list-visit">
+              <input class="list-visit__input" type="checkbox" id="mount" name="mount" checked>
+              <label class="list-visit__subtitle" for="mount">Гора-Колокол</label>
+            </li>
+            <li class="list-visit">
+              <input class="list-visit__input" type="checkbox" id="park" name="park" checked>
+              <label class="list-visit__subtitle" for="park">Слайд-парк</label>
+            </li>
+            <li class="list-visit">
+              <input class="list-visit__input" type="checkbox" id="rocks" name="rocks">
+              <label class="list-visit__subtitle" for="rocks">Красные скалы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Опишите свои эмоции:</legend>
+          <div class="form__description description">
+            <textarea class="description__input" name="description" id="description" placeholder="Опишите подробно все свои восторги"></textarea>
+            <label class="description__subtitle" for="description"></label>
+          </div>
+        </fieldset>
+        <button class="button" type="submit">Отправить отзыв</button>
+      </form>
+      <div class="modal-fail visually-hidden">
+        <h2 class="modal-fail__title">Что-то пошло не так!</h2>
+        <p class="modal-fail__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="button button--fail" type="button">Oк</button>
+      </div>
+      <div class="modal-succes visually-hidden">
+        <h2 class="modal-succes__title">Ваш отзыв отправлен!</h2>
+        <p class="modal-succes__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <button class="button button--succes" type="button">Закрыть окно</button>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__contacts contacts">
+          <p class="contacts__text">#visitSEDONA</p>
+        </div>
+        <ul class="footer__list smm">
+          <li class="smm__item">
+            <img class="smm__icon" src="img/twitter.svg" width="46" height="48" alt="иконка twitter">
+          </li>
+          <li class="smm__item">
+            <img class="smm__icon" src="img/facebook.svg" width="47" height="48" alt="иконка facebook">
+         </li>
+         <li class="smm__item">
+            <img class="smm__icon" src="img/youtube.svg" width="46" height="48" alt="иконка youtube">
+          </li>
+        </ul>
+        <a class="footer__link developer" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="developer__text">Разработано</p>
+          <img class="developer__icon" src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
