@@ -36,25 +36,25 @@
         <div class="welcome__wrapper">
           <img class="welcome__pic" src="img/welcome-text.svg" width="282" height="214" alt="промо текст седона">
           <h1 class="welcome__title">Оставьте свой отзыв</h1>
-          <h2 class="welcome__subtitle">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</h2>
+          <p class="welcome__subtitle">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
       </section>
-      <h2 class="visually_hidden">Страница с формой и отзывами</h2>
+      <h2 class="visually-hidden">Страница с формой и отзывами</h2>
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="form__fieldset">
           <legend class="form__title">Представьтесь:</legend>
-          <ul class="form__list list-name">
-            <li class="list-name__item">
-              <label class="list-name__subtitle" for="name">Имя*:</label>
-              <input class="list-name__input" type="text" name="name" id="name" placeholder="Петр" required>
+          <ul class="form__list list-contact">
+            <li class="list-contact__item">
+              <label class="list-contact__subtitle" for="name">Имя*:</label>
+              <input class="list-contact__input" type="text" name="name" id="name" placeholder="Петр" required>
             </li>
-            <li class="list-name__item">
-              <label class="list-name__subtitle" for="surname">Фамилия*:</label>
-              <input class="list-name__input" type="text" name="surname" id="surname" placeholder="Иванов" required>
+            <li class="list-contact__item">
+              <label class="list-contact__subtitle" for="surname">Фамилия*:</label>
+              <input class="list-contact__input" type="text" name="surname" id="surname" placeholder="Иванов" required>
             </li>
-            <li class="list-name__item">
-              <label class="list-name__subtitle" for="patronymic">Отчество</label>
-              <input class="list-name__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+            <li class="list-contact__item">
+              <label class="list-contact__subtitle" for="patronymic">Отчество</label>
+              <input class="list-contact__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
             </li>
           </ul>
         </fieldset>
@@ -63,11 +63,11 @@
           <ul class="form__list list-contact">
             <li class="list-contact__item">
               <label class="list-contact__subtitle" for="tel">Контактный телефон*:</label>
-              <input class="list-contact__input" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
+              <input class="list-contact__input list-contact__input--tel" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
             </li>
             <li class="list-contact__item">
               <label class="list-contact__subtitle" for="email">Электронная почта*:</label>
-              <input class="list-contact__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+              <input class="list-contact__input list-contact__input--email" type="email" name="email" id="email" placeholder="Введите e-mail" required>
             </li>
           </ul>
         </fieldset>
@@ -116,17 +116,17 @@
             <label class="description__subtitle" for="description"></label>
           </div>
         </fieldset>
-        <button class="form__button" type="submit">Отправить отзыв</button>
+        <button class="button" type="submit">Отправить отзыв</button>
       </form>
-      <div class="modal-fail visually_hidden">
+      <div class="modal-fail visually-hidden">
         <h2 class="modal-fail__title">Что-то пошло не так!</h2>
         <p class="modal-fail__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal-fail__button" type="button">Oк</button>
+        <button class="button button--fail" type="button">Oк</button>
       </div>
-      <div class="modal-succes visually_hidden">
+      <div class="modal-succes visually-hidden">
         <h2 class="modal-succes__title">Ваш отзыв отправлен!</h2>
         <p class="modal-succes__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="modal-succes__button" type="button">Закрыть окно</button>
+        <button class="button button--succes" type="button">Закрыть окно</button>
       </div>
     </main>
     <footer class="footer">
